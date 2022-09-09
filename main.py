@@ -1,9 +1,9 @@
 class IsolationIntervalFinder:
-    def __init__(self, fun, a, b, e):
+    def __init__(self, fun, a_point, b_point, error):
         self.function = fun.lower()
-        self.a = a
-        self.b = b
-        self.e = e
+        self.a = a_point
+        self.b = b_point
+        self.e = error
         self.iteration = 1
 
     def get_middle_point(self):
