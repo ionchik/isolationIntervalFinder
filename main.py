@@ -19,13 +19,13 @@ class IsolationIntervalFinder:
             self.b = middle
         else:
             self.a = middle
-        print(f"Iteration.{self.iteration}: {self.a, self.b}")
+        print(f"Iteration.{self.iteration}: {[self.a, self.b]}")
 
     def find(self):
         while abs(self.a - self.b) >= self.e:
             self.do_iteration()
             self.iteration += 1
-        print(f"Answer: {self.a, self.b}")
+        print(f"Answer: {[self.a, self.b]}")
 
 
 function = input("Enter your function: ")
