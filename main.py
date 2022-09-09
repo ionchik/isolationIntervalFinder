@@ -10,7 +10,7 @@ class IsolationIntervalFinder:
         return (self.a + self.b) / 2
 
     def get_x_point_value(self, x):
-        point_function = self.function.replace("x", str(x))
+        point_function = self.function.replace("x", f"({x})")
         return eval(point_function.split("=")[0])
 
     def do_iteration(self):
@@ -34,3 +34,6 @@ b = float(input("Enter b: "))
 e = float(input("Enter e: "))
 i = IsolationIntervalFinder(function, a, b, e)
 i.find()
+
+# x ** 3 + x ** 2 - 1
+# x ** 3 - 0.2 * x ** 2 + 0.5 * x + 1.5
