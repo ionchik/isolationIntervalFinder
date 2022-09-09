@@ -29,8 +29,8 @@ class IsolationIntervalFinder:
 
 
 function = input("Enter your function: ")
-a = float(input("Enter a: "))
-b = float(input("Enter b: "))
+a = float(input("Enter a point: "))
+b = float(input("Enter b point: "))
 e = float(input("Enter e: "))
 i = IsolationIntervalFinder(function, a, b, e)
 i.find()
